@@ -56,34 +56,34 @@ happens.
 
 | Line                | Expected Result | Actual Result | Were you right? Why? |
 | ------------------- | --------------- | ------------- | -------------------- |
-| `2 + 2`             |                 |               |                      |
-| `5 - 3`             |                 |               |                      |
-| `3 * 6`             |                 |               |                      |
-| `10 / 2`            |                 |               |                      |
-| `5 / 2`             |                 |               |                      |
-| `5.0 / 2`           |                 |               |                      |
-| `“hello” + “world”` |                 |               |                      |
-| `“Hello” - “world”` |                 |               |                      |
-| `3 + “3”`           |                 |               |                      |
-| `typeof “hello”`    |                 |               |                      |
-| `typeof 13`         |                 |               |                      |
-| `typeof true`       |                 |               |                      |
-| `typeof 3 + 5`      |                 |               |                      |
-| `typeof (3 + 5)`    |                 |               |                      |
-| `typeof (3 + “3”)`  |                 |               |                      |
-| `3 == 3`            |                 |               |                      |
-| `3 == 2`            |                 |               |                      |
-| `typeof (3 == 3)`   |                 |               |                      |
-| `3 != 3`            |                 |               |                      |
-| `3 != 2`            |                 |               |                      |
-| `3 == 1 + 2`        |                 |               |                      |
-| `3 == 2 + 2`        |                 |               |                      |
-| `3 < 2 + 2`         |                 |               |                      |
-| `3 > 2 + 2`         |                 |               |                      |
+| `2 + 2`             |   4             | 4             |  Yes - Num + Num     |
+| `5 - 3`             |   2             | 2             |   Yes ^              |
+| `3 * 6`             |   18            | 18            |  Yes both nums       |
+| `10 / 2`            |   5             | 5             |  Yes ^               |
+| `5 / 2`             |   2.5           | 2.5           |  Yes ^               |
+| `5.0 / 2`           |   2.5           | 2.5           |  Yes ^               |
+| `“hello” + “world”` |   helloworld    | helloworld    |  yes adding two sets of characters                        |
+| `“Hello” - “world”` |   Error         | NaN           |  Nearly - Can't take one set of characters from the other |
+| `3 + “3”`           |   33            | 33            |  adding characters                                        |
+| `typeof “hello”`    |   string        | string        |  set of characters is a string                            |
+| `typeof 13`         |   integer       | number        |  Nearly- 13 is interpreted as a number                    |
+| `typeof true`       |   boolean       | boolean       |  Yes - true can be interpreted as boolean                 |
+| `typeof 3 + 5`      |   number        | number5       |  No - does typeof then adds 5.                            |
+| `typeof (3 + 5)`    |   number        | number        |  yes  - does brackets first then type of                  |
+| `typeof (3 + “3”)`  |   string        | string        |  yes - ^                         |
+| `3 == 3`            |   true          | true          |                                  |
+| `3 == 2`            |   false         | false         |                                  |
+| `typeof (3 == 3)`   |   boolean       | boolean       |                                  |
+| `3 != 3`            |   false         | false         |  yes - 3 does equal 3            |
+| `3 != 2`            |   true          | true          |  yes                             |
+| `3 == 1 + 2`        |   false2        | true          |  no - treats it all as numbers   |
+| `3 == 2 + 2`        |   false2        | false         |  no ^                            |
+| `3 < 2 + 2`         |   false2        | true          |  no ^                            |
+| `3 > 2 + 2`         |   true2         | false         |  no ^                            |
 
 ## Task 2
 
-Create a new sketch. Add a folder in this project called `sketch`, and copy the
+Create a new sketch. Add a folder in this project  called`sketch`, and copy the
 `index.html` and `sketch.js` from one of your Workshop 1 sketches into the new
 folder. Open your sketch in the browser to check it's working, then delete
 whatever's in `sketch.js`. Replace it with the following:
