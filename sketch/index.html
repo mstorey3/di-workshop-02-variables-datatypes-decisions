@@ -2,12 +2,34 @@
 <html>
 
 <head>
-  <title>Part C - Intro to P5</title>
+  <title>Snaykeeyyy Snake</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+  <div class="header">
+    <h1>SNAKE</h1>
+    <h2>Leaderboard</h2>
+    <h3 id="score">Score: </h3>
+    <table id="leaderboardTable">
+      <tr style="font-weight: bold">
+        <td>Name</td>
+        <td>Score</td>
+      </tr>
+    </table>
+    <input id="nameInput" type="text" name="name" value="">
+    <button onclick="handleLeaderboard()">Sumbit</button>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.js"></script>
   <script src="sketch.js"></script>
+  
+  <!--<form name="leaderboardInputs" onSubmit="return handleLeaderboard()">
+    <input type="text" name="name" value="">
+    <input type="sumbit" value="Sumbit">
+  </form>-->
+
+
+
 </body>
 
 </html>

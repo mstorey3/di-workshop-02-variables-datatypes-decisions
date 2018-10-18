@@ -1,0 +1,35 @@
+body{
+    margin:0px;
+    width:auto;
+    height:auto;
+    text-align:center;
+    background-color:lightslategray;
+}
+
+h1 {
+    margin:0px;
+    font-family:sans-serif;
+    text-align:center;
+}
+
+.header{
+    margin:0px;
+    width:100%;
+}
+
+table{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+tbody{
+    width:20%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+button{
+    margin-bottom: 10px;
+}
